@@ -38,4 +38,9 @@ public class UserServiceImp implements UserService {
       userDao.deleteAllUsers();
    }
 
+   @Override
+   public User getUser(String firstName, String lastName) {
+      return userDao.getUser(firstName, lastName);
+   }
+
 }
